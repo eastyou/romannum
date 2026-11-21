@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "romannum"
+version = "0.1.0"
+description = "罗马数字转换与练习纸：标准写法校验、双向转换与可打印题目"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "eastyou" }]
+keywords = ["education", "roman-numerals", "math", "worksheet", "printable", "cli"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Environment :: Console",
+  "Topic :: Education",
+]
+
+[project.scripts]
+romannum = "romannum.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/eastyou/romannum"
+Source = "https://github.com/eastyou/romannum"
+
+[tool.setuptools]
+packages = ["romannum"]
